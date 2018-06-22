@@ -1,0 +1,469 @@
+/*  Common */
+
+body {
+  margin: 0 auto 0 auto;
+  font-family: "Calibri", sans-serif;
+  background-color: #F0F1F5;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* margin so that the fixed nav works */
+  margin-top: 95px;
+  width: 85%;
+  transition: 0.7s;
+}
+
+.page-header {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  line-height: 80px;
+  background-color: black;
+  float: left;
+  z-index: 5 !important;
+}
+
+nav h1 {
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+h1 #brand-logo {
+  float: left;
+  text-decoration: none;
+  color: #99C3E8;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: "Century Gothic", "Century";
+  transition: 1s;
+}
+
+#current-page {
+  font-weight: bold;
+}
+
+nav {
+  padding: 0 80px;
+  transition: 0.7s;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+nav ul li {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  margin: 0;
+  display: block;
+  text-decoration: none;
+  color: #B9B9B9;
+  transition: 1s;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+.column-1 {
+  height: 30em;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+/* Home and About pages' splash art */
+
+#home-image {
+  background-image: url("images/backgrounds/home-image.jpeg");
+  background-repeat: no-repeat;
+  background-position: bottom 50% right 35%;
+  background-color: brown;
+  zoom: 100%;
+}
+
+#about-image {
+  background-image: url("images/backgrounds/about-image.jpeg");
+  background-repeat: no-repeat;
+  background-position: top 90% right 15%;
+  background-color: brown;
+  zoom: 150%;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  width: 100%;
+  /* background-color:#012060; */
+  text-align: center;
+  /* color: #9EA4A5; */
+  font-size: 0.6em;
+  padding: 0.8em 0;
+  /* fix footer to bottom if have time later */
+  margin-top: 10em; 
+}
+
+/* Products Page Photo Grid */
+
+.products-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* justify-items: center; */
+  grid-gap: 10px;
+  grid-row-gap: 10px;
+  /* margin so that the fixed nav works */
+  /* margin-top: 190px; */
+  width: 85%;
+  transition: 0.7s;
+}
+
+.product-item {
+  width: auto;
+  height: 400px;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: gray;
+  transition: 1.2s;
+  text-align: center;
+  filter: brightness(1.3);
+}
+
+.product-item:hover {
+  background-size: 200%;
+  cursor: pointer;
+}
+
+.product-item h3 {
+  text-transform: none;
+  font-weight: normal;
+  /* margin: 0; */
+  font-size: 1.25em;
+  line-height: 400px;
+  margin-top: 0;
+  margin-bottom: 0;
+  filter: none;
+  /* background-color: blue; */
+  /* position: relative;
+  top: 50%;
+  transform: translateY(-50%); */
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#ballpoint { background-image: url("images/products/ballpoint-1.jpg"); }
+#felt-tip { background-image: url("images/products/felt-tip-1.jpg"); }
+#gel { background-image: url("images/products/gel-1.jpg"); }
+#retractable { background-image: url("images/products/retractable-1.jpg"); }
+#stylus { background-image: url("images/products/stylus-1.jpg"); }
+
+/* Contact Page */
+
+form {
+  text-align: center;
+  background-position: center;
+}
+
+.form-control {
+  width: 40%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  background-color: transparent;
+  font-family: "Calibri", sans-serif;
+  font-size: 1.3em;
+}
+
+input {
+  height: 2em;
+}
+
+form .submit {
+  background-color: #99C3E8;
+  color: #F0F1F5;
+  border-color: transparent;
+  /* letter-spacing: 0.1em; */
+  height: 2.2em;
+  margin-top: 1em;
+  transition: 0.7s;
+}
+
+form .submit:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+/* Testimonial Page */
+
+.testimonial {
+  border-bottom: 2px solid gray;
+}
+
+blockquote {
+  margin-left: 0;
+  font-size: 1.1em;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.quote-style {
+  font-size: 2.5em;
+}
+
+.person {
+  font-size: 1.3em;
+}
+
+.person div {
+  line-height: 70px;
+}
+
+.person img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 0.5em;
+}
+
+/* Blog Page */
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 0.8em;
+}
+
+.blog-post {
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+.blog-heading {
+  font-size: 1.5em;
+  margin: 0;
+  color: white;
+  padding: 10px;
+  background-color: #99C3E8;
+  font-weight: normal;
+}
+
+.blog-image {
+  background-repeat: no-repeat;
+  background-color: brown;
+  zoom: 100%;
+  height: 300px;
+}
+
+#blog-image-2 {
+  background-image: url("images/blog/post-2.jpeg");
+  background-position: bottom 55% left 40%;
+}
+
+#blog-image-1 {
+  background-image: url("images/blog/post-1.jpeg");
+  background-position: bottom 5% left 40%;
+}
+
+/* Careers Page */
+
+.careers {
+  padding: 10%;
+}
+
+#careers-image {
+  background-image: url("images/backgrounds/careers-image.jpeg");
+  background-repeat: no-repeat;
+}
+
+.wrapper-careers {
+  margin: 3em auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 10px;
+  grid-row-gap: 10px;
+  width: 85%;
+  transition: 0.7s;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.divider-h2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 2em;
+  line-height: 2em;
+}
+
+#receptionist { background-image: url("images/careers/receptionist.jpeg"); }
+#s-manager { background-image: url("images/careers/s-manager.jpeg"); }
+#f-developer { background-image: url("images/careers/f-developer.jpeg"); }
+
+/* Media Query for tablet view */
+
+@media only screen and (max-width: 1175px) {
+
+  /* Nav */
+  nav ul {
+    float: left;
+  }
+
+  .wrapper {
+    margin-top: 180px;
+    width: 100%;
+  }
+
+  /* Photo grid margins */
+  .products-grid {
+    /* margin-top: 190px; */
+    width: 100%;
+  }
+
+  #home-image {
+    background-position: bottom 40% right 30%;
+    /* zoom: 90%; */
+  }
+
+  #about-image {
+    background-position: top 100% right 15%;
+    zoom: 200%;
+  }
+
+  /* Contact Page form */
+  .form-control {
+    width: 66.6%;
+    font-size: 1em;
+  }
+
+}
+
+/* Media Query for mobile view */
+
+@media only screen and (max-width: 784px) {
+  header {
+    position: relative;
+  }
+
+  nav {
+    padding: 0 10px;
+    width: auto;
+    /* float: none; */
+  }
+
+  nav ul {
+    /* float: none; */
+    padding-top: 100px;
+    float: none;
+    line-height: 50px;
+  }
+
+  nav ul li a {
+    width: auto;
+    text-align: center;
+    /* background-color: green; */
+  }
+
+  nav ul li {
+    display: block;
+    /* background-color: red; */
+  }
+
+  h1 #brand-logo {
+    font-size: 1.5em;
+    display: block;
+    float: none;
+    /* background-color: gray; */
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .wrapper {
+    margin-top: 450px;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #home-image {
+    display: none;
+  }
+  
+  #about-image {
+    display: none;
+  }
+
+  /* Blog and Testimonial Page */
+  .person {
+    font-size: 0.8em;
+  }
+
+  .person img {
+    display: none;
+  }
+
+  .person div {
+    line-height: 40px;
+  }
+
+  .blog-image {
+    display: none;
+  }
+
+  /* Products Page */
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .product-item { height: 200px; }
+  .product-item h3 { line-height: 200px; }
+  
+  /* Contact Page form */
+  .form-control {
+    width: 100%;
+    font-size: 1em;
+  }
+
+}

@@ -1,0 +1,313 @@
+/*  Common */
+
+body {
+  margin: 0 auto 0 auto;
+  font-family: "Calibri", sans-serif;
+  background-color: #F0F1F5;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: grid;
+  /* margin so that the fixed nav works */
+  grid-template-columns: 1fr;
+  /* margin-top: 95px; */
+  width: 40%;
+  transition: 0.7s;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.section {
+  height: 100vh;
+  padding-top: 95px;
+}
+
+/* Fixed Navbar */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  line-height: 80px;
+  background-color: #F0F1F5;
+  border-bottom: solid black 2px;
+  overflow: hidden;
+  /* float: left; */
+  /* keeps the fixed navbar layered "on top" of the rest of the page */
+  z-index: 5 !important;
+}
+
+nav h1 {
+  float: left;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+h1 #brand-logo {
+  float: left;
+  text-decoration: none;
+  color: #1F460F;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5em;
+  font-family: "Century Gothic", "Century";
+  transition: 1s;
+}
+
+#current-page {
+  font-weight: bold;
+}
+
+nav {
+  padding: 0 80px;
+  transition: 0.7s;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+nav ul li {
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  margin: 0;
+  display: block;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: black;
+  transition: 1s;
+  opacity: 0.66;
+}
+
+nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
+  color: #1F460F;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  width: 100%;
+  /* background-color:#012060; */
+  text-align: center;
+  /* color: #9EA4A5; */
+  font-size: 0.6em;
+  padding: 0.8em 0;
+  /* fix footer to bottom if have time later */
+  margin-top: 10em; 
+}
+
+/* Home Section */
+
+blockquote {
+  margin-left: 0;
+  font-size: 1.1em;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.person {
+  font-size: 1.3em;
+}
+
+.person div {
+  line-height: 70px;
+}
+
+.person img {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 0.5em;
+}
+
+/* Projects Section */
+
+.product-item {
+  width: auto;
+  height: 400px;
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: gray;
+  transition: 1.2s;
+  text-align: center;
+  filter: brightness(1.3);
+}
+
+.product-item:hover {
+  background-size: 200%;
+  cursor: pointer;
+}
+
+.product-item h3 {
+  text-transform: none;
+  font-weight: normal;
+  /* margin: 0; */
+  font-size: 1.25em;
+  line-height: 400px;
+  margin-top: 0;
+  margin-bottom: 0;
+  filter: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 0.8em;
+}
+
+.project-section {
+  margin-bottom: 2em;
+}
+
+.project-section a {
+  text-decoration: none;
+}
+
+#penzaar { background-image: url("images/projects/penzaar.png"); }
+
+/* Contact Page */
+
+.contact-link {
+  text-align: center;
+  margin: 0;
+}
+.contact-link a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  transition: 1s;
+}
+
+.contact-link a:hover {
+  color: #F0F1F5;
+  background-color: #0E4988;
+}
+
+/* Media Query for tablet view */
+
+@media only screen and (max-width: 1024px) {
+  /* Nav */
+  nav ul {
+    float: left;
+  }
+
+  .wrapper {
+    margin-top: 180px;
+    width: 66.6%;
+  }
+
+  /* Photo grid margins */
+  .products-grid {
+    /* margin-top: 190px; */
+    width: 100%;
+  }
+
+  /* Contact Page form */
+  .form-control {
+    font-size: 1em;
+  }
+
+}
+
+/* Media Query for mobile view */
+
+@media only screen and (max-width: 700px) {   
+  header {
+    position: relative;
+  }
+
+  nav {
+    padding: 0 30px;
+    width: auto;
+    /* float: none; */
+  }
+
+  nav ul {
+    /* float: none; */
+    padding-top: 100px;
+    float: none;
+    line-height: 50px;
+  }
+
+  nav ul li a {
+    width: auto;
+    text-align: center;
+    /* background-color: green; */
+  }
+
+  nav ul li {
+    display: block;
+    /* background-color: red; */
+  }
+
+  h1 #brand-logo {
+    font-size: 1.5em;
+    display: block;
+    float: none;
+    /* background-color: gray; */
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .wrapper {
+    margin-top: 450px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* Blog and Testimonial Page */
+  .person {
+    font-size: 0.8em;
+  }
+
+  .person img {
+    display: none;
+  }
+
+  .person div {
+    line-height: 40px;
+  }
+
+  /* Projects Section */
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .product-item { height: 200px; }
+  .product-item h3 { line-height: 200px; }
+}

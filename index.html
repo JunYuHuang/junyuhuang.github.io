@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jun Huang | Home</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><a id="brand-logo" href="index.html">Jun Huang</a></h1>
+        <ul>
+            <li><a href="#" onclick="goto('#home-header', 100, closeNav())">Home</a></li>
+            <li><a href="#" onclick="goto('#projects-header', null, closeNav())">Projects</a></li>
+            <li><a href="#" onclick="goto('#contact-header', null, closeNav())">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+        <div class="home-section section">
+            <h2 class="page-header" id="home-header">Hi I'm Jun</h2>
+            <blockquote>
+                Student who enjoys server operating systems and web design.
+                More to come soon.
+            </blockquote>
+            <div class="person">
+                <img src="images/people/me.jpeg" alt="Jun Huang">
+                <div>Jun Huang, IT Student @ KPU</div>
+            </div>
+            <hr>
+        </div>
+        <div class="project-section section">
+            <h2 class="page-header" id="projects-header">Projects</h2>
+            <h4>April 1 2018</h4>
+            <a target="_blank" href="work\penzaar\index.html"><div class="product-item" id="penzaar">
+                <h3>Mock Website<h3>
+            </div></a>
+            <p>Fully responsive website with 6 content pages 
+              done with pure HTML5, CSS3, and the CSS Grid module.
+            </p>
+            <hr>
+        </div>
+        <div class="contact-section section">
+            <h2 class="page-header" id="contact-header">Contact Me</h2>
+            <blockquote class="contact-link">
+                <a href="mailto:junyu_huang@hotmail.com">Email</a>
+                <br>
+                <a target="_blank" href="https://twitter.com/Untitled_nam3">Twitter</a>
+                <br>
+                <a target="_blank" href="https://www.linkedin.com/in/junhuang98/">LinkedIn</a>
+            </blockquote>
+        </div>
+    </div>
+    <footer>&copy; 2018 Jun Huang<br><br></footer>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
