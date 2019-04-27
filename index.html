@@ -2,16 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Jun Huang</title>
+    <meta name="author" content="Jun Huang">
+    <meta name="description" content="Jun Huang is a Vancouver student who focuses on web development and design.">
+    <meta name="keywords" content="web,developer,front-end,full-stack,application,html,css,sql,php,java,c#,bootstrap,server">
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Jun Huang</title>
   </head>
   <body>
     <header>
       <nav>
-        <h1><a id="brand-logo" href="index.html">Jun Huang</a></h1>
+        <h1><a id="brand-logo" onclick="goto('#home-header', 125)">Jun Huang</a></h1>
         <ul>
             <li><a onclick="goto('#home-header', 125)">Home</a></li>
             <li><a onclick="goto('#projects-header', 125)">Projects</a></li>
@@ -23,23 +26,24 @@
         <div class="home-section section">
             <h2 class="page-header" id="home-header">Hi I'm Jun</h2>
             <blockquote>
-                Student who enjoys server operating systems and web design.
+                A student in Vancouver focused on full-stack web development and web design.
             </blockquote>
             <div class="person">
-                <img src="images/people/me.jpeg" alt="Jun Huang">
+                <img src="assets/images/me.png" alt="Jun Huang">
                 <div>Jun Huang, IT Student @ KPU</div>
             </div>
             <hr>
         </div>
         <div class="project-section section">
             <h2 class="page-header" id="projects-header">Projects</h2>
-            <h4>April 1 2018</h4>
+            <h4>Mock Website</h4>
             <a target="_blank" href="https://junyuhuang.github.io/web-dev-final-project/"><div class="product-item" id="penzaar">
-                <h3>Mock Website<h3>
+              <h3>_</h3>
             </div></a>
-            <p>Fully responsive website with 6 content pages 
-              done with pure HTML5, CSS3, and the CSS Grid module.
+            <p>Fully responsive, mockup website with 6 content pages. 
             </p>
+            <p>Technology Used: HTML5, CSS3, JavaScript </p>
+            <p><a target="_blank" href="https://github.com/JunYuHuang/INFO1213-project">GitHub Repository</a></p>
             <hr>
         </div>
         <div class="contact-section section">
@@ -49,14 +53,11 @@
                 <br>
                 <a target="_blank" href="https://github.com/JunYuHuang">GitHub</a>
                 <br>
-                <a target="_blank" href="https://twitter.com/Untitled_nam3">Twitter</a>
-                <br>
                 <a target="_blank" href="https://www.linkedin.com/in/junhuang98/">LinkedIn</a>
             </blockquote>
         </div>
     </div>
-    <footer>&copy; 2018 Jun Huang<br><br></footer>
-
-    <script type="text/javascript" src="main.js"></script>
+    <footer>&copy; 2019 Jun Huang<br><br></footer>
+    <script type="text/javascript" src="./assets/javascript/main.js"></script>
   </body>
 </html>
