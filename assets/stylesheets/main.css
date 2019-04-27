@@ -33,7 +33,7 @@ header {
   top: 0;
   left: 0;
   padding: 0;
-  line-height: 80px;
+  line-height: 40px;
   background-color: #F0F1F5;
   border-bottom: solid black 2px;
   overflow: hidden;
@@ -54,7 +54,7 @@ h1 #brand-logo {
   color: #1F460F;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-family: "Century Gothic", "Century";
   transition: 1s;
 }
@@ -142,8 +142,8 @@ blockquote {
 
 .person img {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   margin-right: 0.5em;
 }
 
@@ -158,11 +158,12 @@ blockquote {
   background-color: gray;
   transition: 1.2s;
   text-align: center;
-  filter: brightness(1.3);
+  filter: brightness(0.9);
 }
 
 .product-item:hover {
   background-size: 200%;
+  filter: brightness(0.5);
   cursor: pointer;
 }
 
