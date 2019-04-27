@@ -54,7 +54,7 @@ h1 #brand-logo {
   color: #1F460F;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: "Century Gothic", "Century";
   transition: 1s;
 }
@@ -215,7 +215,7 @@ h4 {
 
 /* Media Query for tablet view */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 500px) {
   /* Nav */
   nav ul {
     float: left;
@@ -241,9 +241,9 @@ h4 {
 
 /* Media Query for mobile view */
 
-@media only screen and (max-width: 700px) { 
+@media only screen and (max-width: 490px) { 
   .section {
-    height: 50vh;
+    height: 70vh;
   }
 
   header {
@@ -275,7 +275,7 @@ h4 {
   }
 
   h1 #brand-logo {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     display: block;
     float: none;
     /* background-color: gray; */
