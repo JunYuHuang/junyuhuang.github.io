@@ -79,8 +79,8 @@ nav ul {
 
 nav ul li {
   margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   list-style-type: none;
   display: inline-block;
 }
@@ -203,14 +203,14 @@ h4 {
   margin: 0;
 }
 .contact-link a {
+  font-size: 1.75em;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
   transition: 1s;
 }
 
 .contact-link a:hover {
-  color: #F0F1F5;
-  background-color: #0E4988;
+  color: #000;
 }
 
 /* Media Query for tablet view */
@@ -218,7 +218,11 @@ h4 {
 @media only screen and (max-width: 500px) {
   /* Nav */
   nav ul {
-    float: left;
+    /* float: left; */
+  }
+  
+  #brand-logo-mobile {
+    display: none;
   }
 
   .wrapper {
@@ -246,39 +250,12 @@ h4 {
     height: 70vh;
   }
 
-  header {
-    position: relative;
-  }
-
   nav {
     padding: 0 30px;
-    width: auto;
-    /* float: none; */
   }
 
-  nav ul {
-    /* float: none; */
-    padding-top: 100px;
-    float: none;
-    line-height: 50px;
-  }
-
-  nav ul li a {
-    width: auto;
-    text-align: center;
-    /* background-color: green; */
-  }
-
-  nav ul li {
-    display: block;
-    /* background-color: red; */
-  }
-
-  h1 #brand-logo {
-    /* font-size: 1.5em; */
-    display: block;
-    float: none;
-    /* background-color: gray; */
+  #brand-logo-mobile {
+    display: none;
   }
 
   h1 a:hover {
