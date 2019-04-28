@@ -7,9 +7,11 @@
     <meta name="keywords" content="web,developer,front-end,full-stack,application,html,css,sql,php,java,c#,bootstrap,server">
     <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="./assets/stylesheets/main.css">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/main.js"></script>
     <title>Jun Huang</title>
   </head>
   <body>
@@ -25,46 +27,45 @@
     <div class="wrapper">
         <div class="home-section section">
             <h2 class="page-header" id="home-header">Hi I'm Jun</h2>
+            <!-- <div class="person"> -->
+              <img id="portrait-image-jun" src="assets/images/me.png" alt="Jun Huang"/>
+            <!-- </div> -->
             <blockquote>
+              <p>
                 A student in Vancouver focused on full-stack web development and web design.
-                <br>
-                <br>
-                Skills and technologies I know:
-                <ul>
-                  <li>JavaScript</li>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Bootstrap</li>
-                  <li>PHP</li>
-                  <li>Java</li>
-                  <li>C#</li>
-                  <li>SQL</li>
-                  <li>MongoDB</li>
-                  <li>Heroku</li>
-                  <li>Git</li>
-                  <li>GitHub</li>
-                </ul>
+                My skills include:
+              </p>
+                <div id="skills-icons">
+                  <i class="devicon-csharp-plain-wordmark colored" title="C#"></i>
+                  <i class="devicon-html5-plain colored" title="HTML"></i>
+                  <i class="devicon-css3-plain colored" title="CSS"></i>
+                  <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+                  <i class="devicon-java-plain colored" title="Java"></i>
+                  <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
+                  <i class="devicon-mysql-plain colored" title="MySQL"></i>
+                  <i class="devicon-php-plain colored" title="PHP"></i>
+                  <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
+                  <i class="devicon-express-original colored" title="Express.js"></i>
+                  <i class="devicon-jquery-plain colored" title="JQuery"></i>
+                  <i class="devicon-nodejs-plain colored" title="Node.js"></i>
+                  <i class="devicon-android-plain colored" title="Android Studio"></i>
+                  <i class="devicon-git-plain colored" title="Git"></i>
+                  <i class="devicon-github-plain colored" title="GitHub"></i>
+                  <i class="devicon-heroku-original colored" title="Heroku"></i>
+                </div>
             </blockquote>
             <br>
-            <div class="person">
-                <img src="assets/images/me.png" alt="Jun Huang">
-                <div>Jun Huang, IT Student @ KPU</div>
-            </div>
-            <hr>
         </div>
         <div class="project-section section">
             <h2 class="page-header" id="projects-header">Projects</h2>
             <h4>Mock Website</h4>
-            <a target="_blank" href="https://junyuhuang.github.io/INFO1213-project/"><div class="product-item" id="penzaar">
-              <!-- <h3>→</h3> -->
-            </div></a>
+            <a target="_blank" href="https://junyuhuang.github.io/INFO1213-project/">
+              <div class="project-item" id="penzaar"></div>
+            </a>
             <p>Fully responsive, mockup website with 6 content pages. 
             </p>
             <p>Technology Used: HTML5, CSS3, JavaScript </p>
             <p><a target="_blank" href="https://github.com/JunYuHuang/INFO1213-project">GitHub Repository</a></p>
-            <hr>
         </div>
         <div class="contact-section section">
             <h2 class="page-header" id="contact-header">Contact Me</h2>
@@ -78,6 +79,5 @@
         </div>
     </div>
     <footer>&copy; 2019 Jun Huang<br><br></footer>
-    <script type="text/javascript" src="./assets/javascript/main.js"></script>
   </body>
 </html>
