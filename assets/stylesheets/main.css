@@ -11,18 +11,21 @@ body {
   display: grid;
   /* margin so that the fixed nav works */
   grid-template-columns: 1fr;
-  /* margin-top: 95px; */
+  margin-top: 57px;
   width: 40%;
   transition: 0.7s;
 }
 
 .page-header {
   text-align: center;
+  color: black;
 }
 
 .section {
   height: 100vh;
-  padding-top: 95px;
+  /* margin-top: 120px; */
+  /* margin: auto 0; */
+  padding-top: 120px;
 }
 
 /* Fixed Navbar */
@@ -110,7 +113,7 @@ footer {
   font-size: 0.9em;
   padding: 0.8em 0;
   /* fix footer to bottom if have time later */
-  margin-top: 10em; 
+  margin-top: 3.5em; 
 }
 
 /* Home/Intro Section */
@@ -125,7 +128,7 @@ blockquote {
 blockquote p {
   text-align: center;
   display: block;
-  padding: 1em 3em;
+  /* padding: 1em 3em; */
 }
 
 #portrait-image-jun {
@@ -176,10 +179,6 @@ h4 {
   font-size: 1.35em;
 }
 
-.project-section {
-  margin-bottom: 2em;
-}
-
 .project-section a {
   text-decoration: none;
 }
@@ -188,9 +187,14 @@ h4 {
 
 /* Contact Section */
 
+#contact-header {
+  height: 80vh;
+}
+
 .contact-link {
   text-align: center;
-  margin: 0;
+  margin: 30vh auto 0;
+  transform: translateY(-50%);
 }
 
 .contact-link a {
@@ -221,18 +225,14 @@ h4 {
 
 @media only screen and (max-width: 1100px) {
   .wrapper {
-    margin-top: 180px;
+    margin-top: 57px;
     width: 75%;
   }
 
   /* Photo grid margins */
-  .products-grid {
-    width: 80%;
-  }
-
   .project-item { 
     height: 300px; 
-    background-size: 100%;
+    background-size: 120%;
   }
 }
 
@@ -240,7 +240,8 @@ h4 {
 
 @media only screen and (max-width: 490px) { 
   .section {
-    height: 70vh;
+    padding-top: 0px;
+    height: 100vh;
   }
 
   nav {
@@ -261,24 +262,28 @@ h4 {
 
   p {
     font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .wrapper {
-    margin-top: 450px;
+    margin-top: 57px;
     width: 90%;
-    display: grid;
-    grid-template-columns: 1fr;
   }
 
-  /* Contact Section */
+  #skills-icons {
+    font-size: 1.5em;
+  }
+
+  /* Photo grid margins */
+  .project-item { 
+    height: 200px; 
+    background-size: 100%;
+  }
+
+  /* portrait image */
   #portrait-image-jun {
     width: 150px;
     height: 150px;
   }
-  
-  /* Projects Section */
-  .products-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-  .project-item { height: 200px; }
 }
