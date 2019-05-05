@@ -12,7 +12,7 @@ body {
   /* margin so that the fixed nav works */
   grid-template-columns: 1fr;
   margin-top: 57px;
-  width: 40%;
+  width: 66.6%;
   transition: 0.7s;
 }
 
@@ -23,9 +23,12 @@ body {
 
 .section {
   height: 100vh;
-  /* margin-top: 120px; */
-  /* margin: auto 0; */
-  padding-top: 120px;
+}
+
+.vertical-center {
+  text-align: center;
+  margin: 50vh auto 0;
+  transform: translateY(-50%);
 }
 
 /* Fixed Navbar */
@@ -103,10 +106,6 @@ h2 {
   font-size: 2em;
 }
 
-p {
-  color: rgba(0, 0, 0, 0.7);
-}
-
 footer {
   width: 100%;
   text-align: center;
@@ -128,7 +127,7 @@ blockquote {
 blockquote p {
   text-align: center;
   display: block;
-  /* padding: 1em 3em; */
+  font-size: 1.2em;
 }
 
 #portrait-image-jun {
@@ -149,30 +148,61 @@ blockquote p {
 #skills-icons i {
   transition: 1s;
   filter: brightness(0.5);
+  /* filter: opacity(0.5); */
+  /* color: rgba(0, 0, 0, 0.7); */
 }
 
 #skills-icons i:hover {
   filter: brightness(1);
+  /* filter: opacity(1); */
 }
 
 /* Projects Section */
 
 .project-item {
   width: auto;
-  height: 400px;
+  height: 70vh;
+  /* min-height: 70vh; */
+  /* margin: 0; */
+  /* display: flex; */
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: gray;
-  transition: 1.2s;
+  transition: 1s;
   text-align: center;
-  filter: brightness(0.9);
 }
 
 .project-item:hover {
-  background-size: 170%;
-  filter: brightness(0.5);
   cursor: pointer;
+}
+
+.project-item-overlay {
+  transition: 1s;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  opacity: 0.01;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: auto;
+  margin: 0;
+  display: flex;
+}
+
+.project-item-overlay:hover {
+  opacity: 0.9;
+}
+
+.project-item-description {
+  color: #F0F1F5;
+  transition: 1s;
+  margin: auto;
+  font-size: 1.5em;
+}
+
+.project-item-description p {
+  padding: 1em;
 }
 
 h4 {
@@ -186,16 +216,6 @@ h4 {
 #penzaar { background-image: url("../images/penzaar.png"); }
 
 /* Contact Section */
-
-#contact-header {
-  height: 80vh;
-}
-
-.contact-link {
-  text-align: center;
-  margin: 30vh auto 0;
-  transform: translateY(-50%);
-}
 
 .contact-link a {
   font-size: 1.75em;
@@ -239,6 +259,12 @@ h4 {
 /* Media Query for mobile view */
 
 @media only screen and (max-width: 490px) { 
+  .project-item-overlay {
+    opacity: 0.9;
+  }
+  .project-item-description {
+    font-size: 1em;
+  }
   .section {
     padding-top: 0px;
     height: 100vh;
@@ -283,7 +309,7 @@ h4 {
 
   /* portrait image */
   #portrait-image-jun {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 }

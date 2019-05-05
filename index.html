@@ -19,17 +19,16 @@
       <nav>
         <h1><a id="brand-logo" onclick="goto('#home-header', 60)">Jun <span id="brand-logo-mobile">Huang</span></a></h1>
         <ul>
-            <li><a onclick="goto('#projects-header', 60)">Projects</a></li>
-            <li><a onclick="goto('#contact-header', 60)">Contact</a></li>
+            <li><a onclick="goto('#projects-header', 0)">Projects</a></li>
+            <li><a onclick="goto('#contact-header', 0)">Contact</a></li>
         </ul>
       </nav>
     </header>
     <div class="wrapper">
         <div class="home-section section" id="home-header">
-            <h2 class="page-header" >Hi I'm Jun</h2>
-            <!-- <div class="person"> -->
+          <div class="vertical-center">
+              <h2 class="page-header" >Hi I'm Jun</h2>
               <img id="portrait-image-jun" src="assets/images/me.png" alt="Jun Huang"/>
-            <!-- </div> -->
             <blockquote>
               <p>
                 A student in Vancouver focused on full-stack web development and web design.
@@ -54,21 +53,28 @@
                   <i class="devicon-heroku-original colored" title="Heroku"></i>
                 </div>
             </blockquote>
-            <br>
+          </div>
         </div>
         <div class="project-section section" id="projects-header">
-            <h2 class="page-header">Projects</h2>
-            <h4>Mock Website</h4>
-            <a target="_blank" href="https://junyuhuang.github.io/INFO1213-project/">
-              <div class="project-item" id="penzaar"></div>
+          <div class="vertical-center">
+            <!-- <h2 class="page-header">Project: Mock Website Template</h2> -->
+            <a target="_blank" href="https://github.com/JunYuHuang/INFO1213-project">
+              <div class="project-item" id="penzaar">
+                <div class="project-item-overlay">
+                  <div class="project-item-description">
+                    <h4>Mock Website Template</h4>
+                    <p>Fully responsive, mockup website template with 6 content pages. 
+                      </p>
+                      <i class="devicon-html5-plain colored" title="HTML"></i>
+                      <i class="devicon-css3-plain colored" title="CSS"></i>
+                  </div>
+                </div>
+              </div>
             </a>
-            <p>Fully responsive, mockup website with 6 content pages. 
-            </p>
-            <p>Technology Used: HTML5, CSS3, JavaScript </p>
-            <p><a target="_blank" href="https://github.com/JunYuHuang/INFO1213-project">GitHub Repository</a></p>
+          </div>
         </div>
         <div class="contact-section section" id="contact-header">
-            
+          <div class="vertical-center">
             <blockquote class="contact-link">
                 <h2 class="page-header">Contact Me</h2>
                 <a href="mailto:junyu_huang@hotmail.com" title="Email"><i class="far fa-envelope"></i></a>
@@ -77,6 +83,7 @@
                 <br>
                 <a target="_blank" href="https://www.linkedin.com/in/junhuang98/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </blockquote>
+          </div>
             <footer>&copy; 2019 Jun Huang<br></footer>
         </div>
     </div>
