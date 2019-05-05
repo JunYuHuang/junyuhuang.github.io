@@ -1,5 +1,9 @@
 /*  Common */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto 0 auto;
   font-family: "Calibri", sans-serif;
