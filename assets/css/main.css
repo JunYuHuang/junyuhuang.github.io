@@ -52,8 +52,10 @@ header {
 
 nav h1 {
   float: left;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  /* margin-top: 8px; */
+  /* margin-bottom: 8px; */
+  margin: 0;
+  line-height: 40px;
 }
 
 #brand-logo {
@@ -65,38 +67,31 @@ nav h1 {
   font-size: 1em;
   font-family: "Century Gothic", "Century";
   transition: 1s;
+  margin-left: 0;
 }
 
 nav {
-  padding: 0 80px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 20fr 1fr 1fr;
+  width: 66.6%;
   transition: 0.7s;
 }
 
-nav ul {
-  list-style: none;
-  float: right;
-  padding: 0;
-  list-style-type: none;
-  margin-top: 8px;
-  margin-bottom: 8px;
+.right-links {
+  color: white;
+  opacity: 0.6;
 }
 
-nav ul li {
-  margin: 0;
-  padding-left: 5px;
-  padding-right: 5px;
-  list-style-type: none;
-  display: inline-block;
-}
-
-nav ul li a {
+nav a {
   margin: 0;
   display: block;
   text-decoration: none;
   font-size: 1.2em;
-  color: white;
   transition: 0.5s;
-  opacity: 0.6;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 0.8em;
 }
 
 nav a:hover {
@@ -250,6 +245,11 @@ h4 {
     width: 75%;
   }
 
+  /* Navbar */
+  nav {
+    width: 75%;
+  }
+
   /* Project Section */
   .project-item {  
     background-size: 120%;
@@ -263,11 +263,6 @@ h4 {
 /* Media Query for mobile view */
 
 @media only screen and (max-width: 490px) { 
-  /* Navbar */
-  nav {
-    padding: 0 30px;
-  }
-
   #brand-logo-mobile {
     display: none;
   }
@@ -284,6 +279,12 @@ h4 {
 
   .wrapper {
     margin-top: 57px;
+    width: 90%;
+  }
+
+  /* Navbar */
+
+  nav {
     width: 90%;
   }
 
