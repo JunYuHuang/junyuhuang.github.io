@@ -39,11 +39,11 @@ body {
 
 header {
   width: 100%;
+  line-height: 40px;
   position: fixed;
   top: 0;
   left: 0;
   padding: 0;
-  line-height: 40px;
   background-color: #1F460F;
   overflow: hidden;
   /* keeps the fixed navbar layered "on top" of the rest of the page */
@@ -137,8 +137,8 @@ blockquote p {
 #portrait-image-jun {
   display: block;
   margin: 0 auto;
-  width: 250px;
-  height: 250px;
+  width: 20em;
+  height: 20em;
   border-radius: 50%;
   transition: 1s;
   filter: brightness(1.1);
@@ -152,13 +152,10 @@ blockquote p {
 #skills-icons i {
   transition: 1s;
   filter: brightness(0.5);
-  /* filter: opacity(0.5); */
-  /* color: rgba(0, 0, 0, 0.7); */
 }
 
 #skills-icons i:hover {
   filter: brightness(1);
-  /* filter: opacity(1); */
 }
 
 /* Projects Section */
@@ -253,36 +250,25 @@ h4 {
     width: 75%;
   }
 
-  /* Photo grid margins */
-  .project-item { 
-    height: 300px; 
+  /* Project Section */
+  .project-item {  
     background-size: 120%;
+  }
+
+  .project-item-overlay {
+    opacity: 0.9;
   }
 }
 
 /* Media Query for mobile view */
 
 @media only screen and (max-width: 490px) { 
-  .project-item-overlay {
-    opacity: 0.9;
-  }
-  .project-item-description {
-    font-size: 1em;
-  }
-  .section {
-    padding-top: 0px;
-    height: 100vh;
-  }
-
+  /* Navbar */
   nav {
     padding: 0 30px;
   }
 
   #brand-logo-mobile {
-    display: none;
-  }
-
-  h1 a:hover {
     display: none;
   }
 
@@ -301,19 +287,26 @@ h4 {
     width: 90%;
   }
 
+  /* Intro Section */
+  #portrait-image-jun {
+    width: 7.5em;
+    height: 7.5em;
+  }
+
+  blockquote p {
+    font-size: 1em;
+  }
+  
   #skills-icons {
     font-size: 1.5em;
   }
 
-  /* Photo grid margins */
+  /* Project Section */
   .project-item { 
-    height: 200px; 
-    background-size: 100%;
+    background-size: 175%;
   }
 
-  /* portrait image */
-  #portrait-image-jun {
-    width: 100px;
-    height: 100px;
+  .project-item-description {
+    font-size: 1em;
   }
 }
