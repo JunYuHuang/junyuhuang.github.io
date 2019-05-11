@@ -223,9 +223,9 @@ form {
   line-height: 1.2em;
 }
 
-.submit-button {
+#submit-button {
   margin: 0;
-  margin-top: -0.15rem;
+  margin-top: -0.3rem;
   padding: 0;
   font-family: "Calibri", sans-serif;
   background-color: #1F460F;
@@ -236,7 +236,7 @@ form {
   transition: 0.3s;
 }
 
-.submit-button:hover {
+#submit-button:hover {
   filter: brightness(1);
   cursor: pointer;
 }
