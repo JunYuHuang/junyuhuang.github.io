@@ -40,6 +40,18 @@ h2 {
   transform: translateY(-50%);
 }
 
+.dark-text {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.light-text-header {
+  color: #F0F1F5;
+}
+.light-text {
+  color: #F0F1F5;
+  opacity: 0.75;
+}
+
 /* Fixed Navbar */
 
 header {
@@ -100,13 +112,7 @@ nav a:hover {
 
 /* Home/Intro Section */
 
-blockquote {
-  font-size: 1.1em;
-  color: rgba(0, 0, 0, 0.65);
-  text-align: center;
-}
-
-blockquote p {
+p {
   text-align: center;
   display: block;
   font-size: 1.2em;
@@ -118,21 +124,22 @@ blockquote p {
   width: 17em;
   height: 17em;
   border-radius: 50%;
-  transition: 1s;
+  transition: 0.3s;
   filter: brightness(1.1);
 }
 
-#skills-icons {
+.skills-icons {
   font-size: 3.8em;
   text-align: center;
-}
-
-#skills-icons i {
-  transition: 1s;
+  transition: 0.3s;
   filter: brightness(0.9);
 }
 
 /* Projects Section */
+
+.project-section a {
+  text-decoration: none;
+}
 
 .project-item {
   width: auto;
@@ -151,13 +158,13 @@ blockquote p {
 }
 
 .project-item-overlay {
-  transition: 1s;
+  transition: 0.3s;
   height: 100%;
   width: 100%;
   top:0;
   left:0;
   opacity: 0.01;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   min-height: auto;
   margin: 0;
   display: flex;
@@ -168,8 +175,7 @@ blockquote p {
 }
 
 .project-item-description {
-  color: #F0F1F5;
-  transition: 1s;
+  transition: 0.3s;
   margin: auto;
 }
 
@@ -178,12 +184,11 @@ blockquote p {
   font-size: 1.2em;
 }
 
-h4 {
-  font-size: 1.35em;
-}
-
-.project-section a {
-  text-decoration: none;
+.project-skills-icons {
+  font-size: 2em;
+  text-align: center;
+  transition: 0.3s;
+  filter: brightness(0.9);
 }
 
 #penzaar { background-image: url("../images/penzaar.png"); }
@@ -266,7 +271,7 @@ footer {
 /* Media Query JUST for Skills/Technology icons */
 
 @media only screen and (max-width: 1000px) {
-  #skills-icons {
+  .skills-icons {
     font-size: 2.5em;
   }
 }
@@ -330,7 +335,7 @@ footer {
     height: 7.5em;
   }
   
-  #skills-icons {
+  .skills-icons {
     font-size: 1.5em;
   }
 
