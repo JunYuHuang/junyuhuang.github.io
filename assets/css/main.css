@@ -12,17 +12,23 @@ body {
 
 .wrapper {
   margin: 0 auto;
+  margin-top: 56px;
   display: grid;
   /* margin so that the fixed nav works */
   grid-template-columns: 1fr;
-  margin-top: 57px;
   width: 66.6%;
-  transition: 0.7s;
+  transition: 0.3s;
 }
 
 .page-header {
   text-align: center;
-  color: black;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 2em;
 }
 
 .section {
@@ -33,6 +39,15 @@ body {
   text-align: center;
   margin: 50vh auto 0;
   transform: translateY(-50%);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 0.8em 0;
+  /* fix footer to bottom if have time later */
+  margin-top: 3.5em; 
 }
 
 /* Fixed Navbar */
@@ -50,76 +65,55 @@ header {
   z-index: 5 !important;
 }
 
-nav h1 {
-  float: left;
-  /* margin-top: 8px; */
-  /* margin-bottom: 8px; */
-  margin: 0;
-  line-height: 40px;
-}
-
-#brand-logo {
-  float: left;
-  text-decoration: none;
-  color: #F0F1F5;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1em;
-  font-family: "Century Gothic", "Century";
-  transition: 1s;
-  margin-left: 0;
-}
-
 nav {
   display: grid;
   margin: 0 auto;
   grid-template-columns: 20fr 1fr 1fr;
   width: 66.6%;
-  transition: 0.7s;
-}
-
-.right-links {
-  color: white;
-  opacity: 0.6;
+  transition: 0.3s;
 }
 
 nav a {
+  color: #F0F1F5;
   margin: 0;
   display: block;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 1.2em;
-  transition: 0.5s;
   margin-top: 8px;
   margin-bottom: 8px;
   margin-left: 0.8em;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  opacity: 1;
+  opacity: 0.6;
   cursor: pointer;
 }
 
-h2 {
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 2em;
+#brand-logo {
+  text-decoration: none;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family: "Century Gothic", "Century";
+  margin-left: 0;
+  transition: 0.3s;
 }
 
-footer {
-  width: 100%;
-  text-align: center;
-  font-size: 0.9em;
-  padding: 0.8em 0;
-  /* fix footer to bottom if have time later */
-  margin-top: 3.5em; 
+#brand-logo:hover {
+  opacity: 0.6;
+}
+
+.right-links {
+  opacity: 0.9;
 }
 
 /* Home/Intro Section */
 
 blockquote {
-  /* margin-left: 0; */
   font-size: 1.1em;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.65);
   text-align: center;
 }
 
@@ -146,11 +140,7 @@ blockquote p {
 
 #skills-icons i {
   transition: 1s;
-  filter: brightness(0.5);
-}
-
-#skills-icons i:hover {
-  filter: brightness(1);
+  filter: brightness(0.9);
 }
 
 /* Projects Section */
@@ -158,10 +148,7 @@ blockquote p {
 .project-item {
   width: auto;
   height: 70vh;
-  /* min-height: 70vh; */
-  /* margin: 0; */
-  /* display: flex; */
-  background-size: 120%;
+  background-size: 130%;
   background-repeat: no-repeat;
   background-position: center;
   background-color: gray;
@@ -171,6 +158,7 @@ blockquote p {
 
 .project-item:hover {
   cursor: pointer;
+  background-size: 230%;
 }
 
 .project-item-overlay {
@@ -194,11 +182,12 @@ blockquote p {
   color: #F0F1F5;
   transition: 1s;
   margin: auto;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
 }
 
 .project-item-description p {
   padding: 1em;
+  font-size: 1.2em;
 }
 
 h4 {
@@ -211,17 +200,58 @@ h4 {
 
 #penzaar { background-image: url("../images/penzaar.png"); }
 
-/* Contact Section */
+/* Contact Section + Email Page */
+
+#contact-page-wrapper {
+  /* margin: 0 auto 0 auto; */
+}
 
 .contact-link a {
   font-size: 1.75em;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
-  transition: 1s;
+  color: #1F460F;
+  filter: brightness(2);
+  transition: 0.3s;
 }
 
 .contact-link a:hover {
-  color: #000;
+  filter: brightness(1);
+}
+
+form {
+  width: 100%;
+}
+
+.contact-email-form {
+  width: 100%;
+  border: none;
+  border: 0.15rem solid rgba(0, 0, 0, 0.65);
+  color: rgba(0, 0, 0, 0.65);
+  background-color: transparent;
+  font-family: "Calibri", sans-serif;
+  font-size: 1.2em;
+  line-height: 2.4em;
+}
+
+textarea {
+  resize: none;
+}
+
+.submit-button {
+  margin: 0;
+  padding: 0;
+  font-family: "Calibri", sans-serif;
+  background-color: #1F460F;
+  color: #F0F1F5;
+  border-color: transparent;
+  height: 2.4em;
+  filter: brightness(1.5);
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  filter: brightness(1);
+  cursor: pointer;
 }
 
 /* Media Query JUST for Skills/Technology icons */
@@ -241,7 +271,6 @@ h4 {
 
 @media only screen and (max-width: 1100px) {
   .wrapper {
-    margin-top: 57px;
     width: 75%;
   }
 
@@ -252,7 +281,7 @@ h4 {
 
   /* Project Section */
   .project-item {  
-    background-size: 120%;
+    background-size: 170%;
   }
 
   .project-item-overlay {
@@ -272,13 +301,13 @@ h4 {
   }
 
   p {
-    font-size: 1em;
+    font-size: 0.9em;
     padding-left: 0;
     padding-right: 0;
   }
 
   .wrapper {
-    margin-top: 57px;
+    margin-top: 0;
     width: 90%;
   }
 
@@ -304,7 +333,7 @@ h4 {
 
   /* Project Section */
   .project-item { 
-    background-size: 175%;
+    background-size: 200%;
   }
 
   .project-item-description {
