@@ -41,15 +41,6 @@ h2 {
   transform: translateY(-50%);
 }
 
-footer {
-  width: 100%;
-  text-align: center;
-  font-size: 0.9em;
-  padding: 0.8em 0;
-  /* fix footer to bottom if have time later */
-  margin-top: 3.5em; 
-}
-
 /* Fixed Navbar */
 
 header {
@@ -151,7 +142,7 @@ blockquote p {
   background-size: 130%;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: gray;
+  background-color: black;
   transition: 1s;
   text-align: center;
 }
@@ -187,7 +178,7 @@ blockquote p {
 
 .project-item-description p {
   padding: 1em;
-  font-size: 1.2em;
+  font-size: 1.3em; /* feels the same as 1.2em as in the intro section for some reason */
 }
 
 h4 {
@@ -200,26 +191,17 @@ h4 {
 
 #penzaar { background-image: url("../images/penzaar.png"); }
 
-/* Contact Section + Email Page */
+/* Contact Section + Footer */
 
-#contact-page-wrapper {
-  /* margin: 0 auto 0 auto; */
-}
-
-.contact-link a {
-  font-size: 1.75em;
-  text-decoration: none;
-  color: #1F460F;
-  filter: brightness(2);
-  transition: 0.3s;
-}
-
-.contact-link a:hover {
-  filter: brightness(1);
+#contact-header {
+  height: 90vh;
 }
 
 form {
-  width: 100%;
+  margin: 0 auto;
+  width: 75%;
+  box-sizing: border-box;
+  transition: 0.3s;
 }
 
 .contact-email-form {
@@ -231,6 +213,8 @@ form {
   font-family: "Calibri", sans-serif;
   font-size: 1.2em;
   line-height: 2.4em;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 textarea {
@@ -252,6 +236,30 @@ textarea {
 .submit-button:hover {
   filter: brightness(1);
   cursor: pointer;
+}
+
+.contact-link {
+  font-size: 1.75em;
+}
+
+.contact-link a {
+  text-decoration: none;
+  color: #1F460F;
+  filter: brightness(2);
+  transition: 0.3s;
+  text-align: center;
+  
+}
+
+.contact-link a:hover {
+  filter: brightness(1);
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
 }
 
 /* Media Query JUST for Skills/Technology icons */
@@ -286,6 +294,11 @@ textarea {
 
   .project-item-overlay {
     opacity: 0.9;
+  }
+
+  /* Contact Section */
+  form {
+    width: 100%;
   }
 }
 

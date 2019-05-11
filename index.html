@@ -73,17 +73,23 @@
         </div>
         <div class="contact-section section" id="contact-header">
           <div class="vertical-center">
-            <blockquote class="contact-link">
-                <h2 class="page-header">Contact Me</h2>
-                <a href="contact.html" title="Email"><i class="far fa-envelope"></i></a>
-                <br>
-                <a href="https://github.com/JunYuHuang" title="GitHub"><i class="fab fa-github"></i></a>
-                <br>
-                <a href="https://www.linkedin.com/in/junhuang98/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </blockquote>
+            <h2 class="page-header" >Email Me</h2>
+            <form action="https://formspree.io/junyu_huang@hotmail.com" method="POST">
+              <input class="contact-email-form" name="name" type="text" placeholder="Your Name" required="">
+              <input class="contact-email-form" name="email" type="email" placeholder="Your Email" required="">
+              <textarea class="contact-email-form" name="message" placeholder="Your Message" rows="3.75" required=""></textarea>
+              <input class="contact-email-form submit-button" type="submit" value="Send">
+            </form>
           </div>
-          <footer>&copy; 2019 Jun Huang<br></footer>
         </div>
+        <footer>
+          &copy; 2019 Jun Huang
+          <br>
+          <div class="contact-link">
+            <a href="https://github.com/JunYuHuang" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/junhuang98/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>  
+          </div>        
+        </footer>
     </div>
   </body>
 </html>
