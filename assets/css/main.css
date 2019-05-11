@@ -210,14 +210,14 @@ form {
   background-color: transparent;
   font-family: "Calibri", sans-serif;
   font-size: 1.2em;
-  line-height: 2.4em;
+  line-height: 1.5em;
   box-sizing: border-box;
   margin: 0;
 }
 
 #email-textarea {
   resize: none;
-  line-height: 1.2em;
+  line-height: 1.5em;
   /* border-bottom: 0.15rem solid rgba(0, 0, 0, 0.65); */
   vertical-align: top;  /* fixes weird gap space between textarea and submit button */
 }
@@ -229,7 +229,7 @@ form {
   background-color: #1F460F;
   color: #F0F1F5;
   border-color: transparent;
-  height: 2.4em;
+  height: 3em;
   filter: brightness(1.5);
   transition: 0.3s;
 }
