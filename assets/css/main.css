@@ -177,6 +177,7 @@ p {
 .project-item-description {
   transition: 0.3s;
   margin: auto;
+  width: 33.3%;
 }
 
 .project-item-description p {
@@ -223,7 +224,6 @@ form {
 #email-textarea {
   resize: none;
   line-height: 1.5em;
-  /* border-bottom: 0.15rem solid rgba(0, 0, 0, 0.65); */
   vertical-align: top;  /* fixes weird gap space between textarea and submit button */
 }
 
@@ -297,6 +297,10 @@ footer {
     opacity: 0.9;
   }
 
+  .project-item-description {
+    width: 60%;
+  }
+
   /* Contact Section */
   form {
     width: 100%;
@@ -342,5 +346,9 @@ footer {
   /* Project Section */
   .project-item { 
     background-size: 200%;
+  }
+
+  .project-item-description {
+    width: 100%;
   }
 }
