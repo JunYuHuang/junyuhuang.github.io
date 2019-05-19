@@ -1,0 +1,25 @@
+// Colours
+$colorBackground: rgb(240, 241, 245);
+$colorAccent: rgb(31, 70, 15);
+$colorLightTextheader: $colorBackground;
+$colorLightTextBody: rgba(240, 241, 245, 0.75);
+$colorDarkTextHeader: #000;
+$colorDarkTextBody: rgba(0, 0, 0, 0.75);
+
+// Fonts + Sizing
+$fontFamilyDefault: "Calibri", sans-serif;
+$fontFamilyBrand: "Century Gothic", "Century";
+$fontSizeHeaderDesktop: 2em;
+$fontSizeHeaderTablet: 2em;
+$fontSizeHeaderMobile: 1.5em;
+$fontSizeBodyDesktop: 1.2em;
+$fontSizeBodyTablet: 1.2em;
+$fontSizeBodyMobile: 1.2em;
+
+// Grid Scaling widths
+$widthGridDesktop: 66.6%;
+$widthGridTablet: 75%;
+$widthGridMobile: 90%;
+
+// Miscellaneous
+$sectionHeight: 100vh;
