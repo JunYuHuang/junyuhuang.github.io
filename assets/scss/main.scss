@@ -13,9 +13,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  margin-top: 56px;
-  display: grid;
-  grid-template-columns: 1fr;
+  margin-top: 54px;
   width: 66.6%;
   transition: 0.3s;
 }
@@ -31,14 +29,14 @@ h2 {
   font-size: 2em;
 }
 
-.section {
-  height: 100vh;
+.vertical-center {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
 }
 
-.vertical-center {
-  text-align: center;
-  margin: 50vh auto 0;
-  transform: translateY(-50%);
+.section {
+  margin: auto;
 }
 
 .dark-text {
@@ -71,7 +69,6 @@ nav {
   margin: 0 auto;
   width: 66.6%;
   transition: 0.3s;
-  // height: 3.5em;
   display: flex;
 }
 
@@ -202,8 +199,10 @@ p {
 
 /* Contact Section + Footer */
 
-#contact-header {
-  height: 90vh;
+.vertical-center-contact-section {
+  display: flex;
+  min-height: 90vh;
+  margin: 0;
 }
 
 form {
