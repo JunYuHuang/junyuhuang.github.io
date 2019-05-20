@@ -1,33 +1,27 @@
-/*  Common */
 html {
   scroll-behavior: smooth;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   font-family: "Calibri", sans-serif;
-  background-color: #F0F1F5;
+  background-color: #f0f1f5;
 }
 
 .wrapper {
   margin: 0 auto;
-  margin-top: 54px;
   width: 66.6%;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.page-header {
+.wrapper .section-header {
   text-align: center;
   color: rgba(0, 0, 0, 0.9);
-}
-
-h2 {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 2em;
+  margin: 0.7rem 0;
 }
 
 .vertical-center {
@@ -163,8 +157,8 @@ p {
 }
 
 .project-item {
-  width: auto;
-  height: 70vh;
+  width: 100%;
+  height: 65vh;
   background-size: 130%;
   background-repeat: no-repeat;
   background-position: center;
