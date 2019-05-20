@@ -1,0 +1,50 @@
+html { scroll-behavior: smooth; }
+
+body {
+  @include centerHorizontally();
+  font-family: $fontFamilyDefault;
+  background-color: $colorBackground;
+}
+
+a { text-decoration: none; }
+
+p {
+  text-align: center;
+  display: block;
+  font-size: 1.2em;
+}
+
+.vertical-center {
+  text-align: center;
+  margin: 50vh auto 0;
+  transform: translateY(-50%);
+}
+
+.dark-text {
+  color: $colorDarkTextBody;
+}
+
+.light-text {
+  color: $colorLightTextBody;
+}
+
+.wrapper {
+  @include centerHorizontally();
+  width: $widthDesktop;
+  transition: $transitionTimeDefault;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .section {
+    height: $sectionHeightDefault;
+  }
+
+  .section-header {
+    text-align: center;
+    color: $colorDarkTextHeader;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: $fontSizeHeaderDesktop;
+    margin: 0.7rem 0;
+  }
+}

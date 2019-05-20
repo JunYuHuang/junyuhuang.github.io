@@ -1,0 +1,64 @@
+// Tablet View
+@media only screen and (max-width: 1000px) {
+    .wrapper, header nav {
+      width: $widthTablet;
+    }
+  
+    // Home Section
+    .skills-icons {
+      font-size: 2.5em;
+    }
+  
+    // Project Section
+    .project-item {  
+      background-size: 170%;
+  
+      .project-item-overlay {
+        opacity: 0.9;
+  
+        .project-item-description {
+          width: 60%;
+        }
+      }
+    }
+  
+    // Contact Section
+    form {
+      width: 100%;
+    }
+  }
+  
+// Mobile View
+  
+@media only screen and (max-width: 490px) { 
+    #brand-logo-mobile {
+      display: none;
+    }
+  
+    .wrapper, header nav {
+      width: $widthMobile;
+    }
+  
+    .wrapper .section-header {
+      font-size: $fontSizeHeaderMobile;
+    }
+  
+    // Home/Intro Section
+    #portrait-image-jun {
+      width: 7.5em;
+      height: 7.5em;
+    }
+    
+    .skills-icons {
+      font-size: 1.5em;
+    }
+  
+    // Project Section
+    .project-item { 
+      background-size: 200%;
+    }
+  
+    .project-item-description {
+      width: 100%;
+    } 
+}

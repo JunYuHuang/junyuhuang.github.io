@@ -1,0 +1,16 @@
+#portrait-image-jun {
+    display: block;
+    margin: 0 auto;
+    width: 17em;
+    height: 17em;
+    border-radius: 50%;
+    transition: 0.3s;
+    filter: brightness(1.1);
+}
+  
+.skills-icons {
+    font-size: 3.8em;
+    text-align: center;
+    transition: $transitionTimeDefault;
+    filter: brightness(0.9);
+}

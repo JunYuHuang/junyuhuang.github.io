@@ -1,0 +1,54 @@
+// Projects Section
+
+.project-item {
+    width: auto;
+    height: 70vh;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    transition: $transitionTimeProjectItem;
+    text-align: center;
+  
+    .project-item-overlay {
+      transition: $transitionTimeDefault;
+      height: 100%;
+      width: 100%;
+      top:0;
+      left:0;
+      opacity: 0.01;
+      background-color: $colorDarkTextHeader;
+      min-height: auto;
+      margin: 0;
+      display: flex;
+  
+      .project-item-description {
+        transition: $transitionTimeDefault;
+        margin: auto;
+        width: $widthDesktop;
+        
+        p {
+          padding: 0;
+        }
+      }
+    }
+  
+    .project-item-overlay:hover {
+      opacity: 0.9;
+    }
+}
+  
+.project-item:hover {
+    cursor: pointer;
+    background-size: 230%;
+}
+  
+.project-skills-icons {
+    font-size: 2em;
+    text-align: center;
+    transition: 0.3s;
+    filter: brightness(0.9);
+}
+  
+#penzaar { background-image: url("../images/penzaar.png"); }
+  

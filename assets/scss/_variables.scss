@@ -1,6 +1,6 @@
 // Colours
-$colorBackground: rgb(240, 241, 245);
 $colorAccent: rgb(31, 70, 15);
+$colorBackground: rgb(240, 241, 245);
 $colorLightTextheader: $colorBackground;
 $colorLightTextBody: rgba(240, 241, 245, 0.75);
 $colorDarkTextHeader: #000;
@@ -16,10 +16,21 @@ $fontSizeBodyDesktop: 1.2em;
 $fontSizeBodyTablet: 1.2em;
 $fontSizeBodyMobile: 1.2em;
 
-// Grid Scaling widths
-$widthGridDesktop: 66.6%;
-$widthGridTablet: 75%;
-$widthGridMobile: 90%;
+// Scaling Widths
+$widthDesktop: 66.6%;
+$widthTablet: 75%;
+$widthMobile: 90%;
 
 // Miscellaneous
-$sectionHeight: 100vh;
+$sectionHeightDefault: 100vh;
+$footerHeight: 10vh;
+$sectionHeightContact: calc(100vh - #{$footerHeight});
+
+// Transitions
+$transitionTimeDefault: 0.3s;
+$transitionTimeProjectItem: 1s;
+
+// Mixins
+@mixin centerHorizontally() {
+  margin: 0 auto;
+}
