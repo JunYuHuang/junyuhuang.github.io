@@ -207,6 +207,10 @@ header nav .nav-links {
   background-image: url("../images/penzaar.png");
 }
 
+#church-in-richmond {
+  background-image: url("../images/church-in-richmond.png");
+}
+
 #contact-header {
   height: calc(100vh - 10vh);
 }
@@ -289,7 +293,6 @@ footer .contact-link a:hover {
           filter: brightness(1);
 }
 
-/* Media Query for tablet view */
 @media only screen and (max-width: 1000px) {
   .wrapper, header nav {
     width: 75%;
@@ -297,7 +300,6 @@ footer .contact-link a:hover {
   .skills-icons {
     font-size: 2.5em;
   }
-  /* Project Section */
   .project-item {
     background-size: 170%;
   }
@@ -307,13 +309,11 @@ footer .contact-link a:hover {
   .project-item .project-item-overlay .project-item-description {
     width: 60%;
   }
-  /* Contact Section */
   form {
     width: 100%;
   }
 }
 
-/* Media Query for mobile view */
 @media only screen and (max-width: 490px) {
   #brand-logo-mobile {
     display: none;
@@ -324,7 +324,6 @@ footer .contact-link a:hover {
   .wrapper .section-header {
     font-size: 1.5em;
   }
-  /* Intro Section */
   #portrait-image-jun {
     width: 7.5em;
     height: 7.5em;
@@ -332,7 +331,6 @@ footer .contact-link a:hover {
   .skills-icons {
     font-size: 1.5em;
   }
-  /* Project Section */
   .project-item {
     background-size: 200%;
   }
