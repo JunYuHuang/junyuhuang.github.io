@@ -211,6 +211,10 @@ header nav .nav-links {
   background-image: url("../images/church-in-richmond.png");
 }
 
+#secret-club {
+  background-image: url("../images/secret-club.png");
+}
+
 #contact-header {
   height: calc(100vh - 10vh);
 }
