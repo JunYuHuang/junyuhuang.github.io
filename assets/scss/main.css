@@ -22,6 +22,11 @@ a {
   opacity: 0.5;
 }
 
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
 h1 {
   font-size: 5rem;
 }
@@ -81,9 +86,6 @@ p {
 .wrapper .section-header {
   text-align: center;
   color: #000;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 2em;
   margin: 0.7rem 0;
 }
 
@@ -353,8 +355,11 @@ footer .contact-link a:hover {
   .wrapper, header nav {
     width: 90%;
   }
-  .wrapper .section-header {
-    font-size: 1.5em;
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
   }
   #portrait-image-jun {
     width: 7.5em;
