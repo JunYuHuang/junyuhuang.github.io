@@ -8,6 +8,24 @@ body {
 
 a { text-decoration: none; }
 
+.color-link { 
+  color: #007bff; 
+  transition: 0.3s;
+}
+.color-link:hover { opacity: 0.5; }
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 p {
   text-align: center;
   display: block;
@@ -24,8 +42,16 @@ p {
   color: $colorDarkTextBody;
 }
 
+.dark-text-header {
+  color: $colorDarkTextHeader;
+}
+
 .light-text {
   color: $colorLightTextBody;
+}
+
+.light-text-header {
+  color: $colorLightTextHeader;
 }
 
 .wrapper {

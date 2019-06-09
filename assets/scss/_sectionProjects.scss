@@ -3,24 +3,27 @@
 .project-item {
     width: auto;
     height: 70vh;
-    background-size: 130%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
     transition: $transitionTimeProjectItem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   
     .project-item-overlay {
       transition: $transitionTimeDefault;
-      height: 100%;
+      height: 50%;
       width: 100%;
-      top:0;
-      left:0;
-      opacity: 0.01;
+      top: 0;
+      left: 0;
       background-color: $colorDarkTextHeader;
       min-height: auto;
       margin: 0;
       display: flex;
+      opacity: 0.9;
   
       .project-item-description {
         transition: $transitionTimeDefault;
@@ -32,15 +35,6 @@
         }
       }
     }
-  
-    .project-item-overlay:hover {
-      opacity: 0.9;
-    }
-}
-  
-.project-item:hover {
-    cursor: pointer;
-    background-size: 230%;
 }
   
 .project-skills-icons {

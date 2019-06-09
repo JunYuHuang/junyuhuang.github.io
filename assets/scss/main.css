@@ -12,6 +12,28 @@ a {
   text-decoration: none;
 }
 
+.color-link {
+  color: #007bff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.color-link:hover {
+  opacity: 0.5;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
 p {
   text-align: center;
   display: block;
@@ -29,8 +51,16 @@ p {
   color: rgba(0, 0, 0, 0.75);
 }
 
+.dark-text-header {
+  color: #000;
+}
+
 .light-text {
   color: rgba(240, 241, 245, 0.75);
+}
+
+.light-text-header {
+  color: #f0f1f5;
 }
 
 .wrapper {
@@ -149,29 +179,39 @@ header nav .nav-links {
 .project-item {
   width: auto;
   height: 70vh;
-  background-size: 130%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   -webkit-transition: 1s;
   transition: 1s;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .project-item .project-item-overlay {
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  height: 100%;
+  height: 50%;
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.01;
   background-color: #000;
   min-height: auto;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0.9;
 }
 
 .project-item .project-item-overlay .project-item-description {
@@ -183,15 +223,6 @@ header nav .nav-links {
 
 .project-item .project-item-overlay .project-item-description p {
   padding: 0;
-}
-
-.project-item .project-item-overlay:hover {
-  opacity: 0.9;
-}
-
-.project-item:hover {
-  cursor: pointer;
-  background-size: 230%;
 }
 
 .project-skills-icons {
@@ -304,9 +335,6 @@ footer .contact-link a:hover {
   .skills-icons {
     font-size: 2.5em;
   }
-  .project-item {
-    background-size: 170%;
-  }
   .project-item .project-item-overlay {
     opacity: 0.9;
   }
@@ -334,9 +362,6 @@ footer .contact-link a:hover {
   }
   .skills-icons {
     font-size: 1.5em;
-  }
-  .project-item {
-    background-size: 200%;
   }
   .project-item-description {
     width: 100%;
