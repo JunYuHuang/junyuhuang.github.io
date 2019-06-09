@@ -57,7 +57,12 @@
     }
   
     // Project Section
-    .project-item-description {
+    .project-item .project-item-overlay {
+      height: 47vh;
+    }
+
+    .project-item .project-item-overlay .project-item-description {
       width: 100%;
+      margin: 0;
     } 
 }

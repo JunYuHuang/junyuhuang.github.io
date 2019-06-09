@@ -33,6 +33,7 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
+  margin-top: 0;
 }
 
 h3 {
@@ -188,6 +189,32 @@ header nav .nav-links {
   -webkit-transition: 1s;
   transition: 1s;
   text-align: center;
+}
+
+.project-item .projects-image-frame {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: inherit;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.project-item .projects-image-frame:hover {
+  opacity: 0.5;
+}
+
+.project-item .project-item-overlay {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 35vh;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  position: absolute;
+  margin: 0;
+  opacity: 0.9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,25 +222,10 @@ header nav .nav-links {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.project-item .project-item-overlay {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  height: 50%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  min-height: auto;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 0.9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
 }
 
 .project-item .project-item-overlay .project-item-description {
@@ -368,8 +380,12 @@ footer .contact-link a:hover {
   .skills-icons {
     font-size: 1.5em;
   }
-  .project-item-description {
+  .project-item .project-item-overlay {
+    height: 47vh;
+  }
+  .project-item .project-item-overlay .project-item-description {
     width: 100%;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
