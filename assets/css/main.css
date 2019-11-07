@@ -162,18 +162,6 @@ header nav .nav-links {
   justify-content: flex-end;
 }
 
-#portrait-image-jun {
-  display: block;
-  margin: 0 auto;
-  width: 17em;
-  height: 17em;
-  border-radius: 50%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-filter: brightness(1.1);
-  filter: brightness(1.1);
-}
-
 .skills-icons {
   font-size: 3.8em;
   text-align: center;
@@ -366,10 +354,6 @@ footer .contact-link a:hover {
   }
   h2 {
     font-size: 2em;
-  }
-  #portrait-image-jun {
-    width: 7.5em;
-    height: 7.5em;
   }
   .skills-icons {
     font-size: 1.5em;
