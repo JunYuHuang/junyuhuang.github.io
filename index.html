@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="author" content="Jun Huang" />
-    <meta
-      name="description"
-      content="Jun Huang is a Vancouver student who focuses on web development and design."
-    />
+    <meta name="description" content="Jun Huang's portfolio" />
     <meta
       name="keywords"
       content="web,developer,front-end,full-stack,application,html,css,sql,php,java,c#,bootstrap,server"
@@ -41,26 +38,29 @@
         <div class="vertical-center">
           <h1 class="section-header">Hi I'm Jun</h1>
           <p class="dark-text">
-            A full-stack web developer in training. My skills include:
+            A <abbr title="Computer Science and Information Technology">CSIT</abbr> undergraduate at <abbr title="Kwantlen Polytechnic University">KPU</abbr> preparing for software engineering and full-stack web development. 
           </p>
-          <div class="skills-icons">
-            <!-- languages -->
-            <i class="devicon-css3-plain colored" title="CSS"></i>
-            <i class="devicon-html5-plain colored" title="HTML"></i>
-            <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-            <i class="devicon-java-plain colored" title="Java"></i>
-            <i class="devicon-mysql-plain colored" title="MySQL"></i>
-            <!-- frameworks/libraries -->
-            <i class="devicon-jquery-plain colored" title="JQuery"></i>
-            <!-- tools -->
-            <i class="devicon-git-plain colored" title="Git"></i>
-          </div>
+          <p class="dark-text">
+            I've worked with technologies such as:
+          </p>
+          <ul class="dark-text skills-icons">
+            <li>CSS3</li>
+            <li>HTML5</li>
+            <li>JavaScript (ES6)</li>
+            <li>Java</li>
+            <li>MySQL</li>
+            <li>JQuery</li>
+            <li>Git</li>
+          </ul>
+          <br>
+          <p>
+            <a class="button" href="#projects-header">See My Work</a>
+          </p>
         </div>
       </div>
       <div class="section" id="projects-header">
         <div class="vertical-center">
           <h1 class="section-header">Projects</h1>
-          <a href="https://junyuhuang.github.io/trivia-game/">
             <div class="project-item">
               <img
                 src="./assets/images/trivia-game.png"
@@ -69,8 +69,8 @@
               />
               <div class="project-item-overlay">
                 <div class="project-item-description">
-                  <h2 class="color-link">Trivia Game</h2>
-                  <p class="light-text">
+                  <h2 class="dark-text">Trivia Game</h2>
+                  <p class="dark-text">
                     Simple vanilla JS web game that asks multiple choice, video
                     game trivia questions that are pulled from an external API.
                   </p>
@@ -82,27 +82,27 @@
                       title="JavaScript"
                     ></i>
                   </span>
+                  <p><a class="color-link" href="https://junyuhuang.github.io/trivia-game/">View Live</a></p>
+                  <p><a class="color-link" href="https://github.com/junyuhuang/trivia-game/">View Code</a class="color-link"></p>
                 </div>
               </div>
             </div>
-          </a>
         </div>
       </div>
       <div class="section">
         <div class="vertical-center">
-          <a href="https://junyuhuang.github.io/secret-club-website/">
             <div class="project-item">
               <img
                 src="./assets/images/secret-club.png"
-                alt="The Secret Club"
+                alt="Trivia Game"
                 class="projects-image-frame"
               />
               <div class="project-item-overlay">
                 <div class="project-item-description">
-                  <h2 class="color-link">The Secret Club</h2>
-                  <p class="light-text">
-                    Fully responsive, one-page Bootstrap website for a fictional
-                    organization that features lazy-loaded images.
+                  <h2 class="dark-text">Trivia Game</h2>
+                  <p class="dark-text">
+                    Simple vanilla JS web game that asks multiple choice, video
+                    game trivia questions that are pulled from an external API.
                   </p>
                   <span class="project-skills-icons">
                     <i class="devicon-css3-plain colored" title="CSS"></i>
@@ -111,17 +111,21 @@
                       class="devicon-javascript-plain colored"
                       title="JavaScript"
                     ></i>
-                    <i class="devicon-jquery-plain colored" title="JQuery"></i>
                   </span>
+                  <p><a class="color-link" href="https://junyuhuang.github.io/secret-club-website/">View Live</a></p>
+                  <p><a class="color-link" href="https://github.com/junyuhuang/secret-club-website/">View Code</a class="color-link"></p>
                 </div>
               </div>
             </div>
-          </a>
         </div>
       </div>
       <div class="section-contact" id="contact-header">
         <div class="vertical-center">
-          <h1 class="section-header">Email Me</h1>
+          <h1 class="section-header">Contact Me</h1>
+          <p>
+            <a class="color-link" href="https://github.com/JunYuHuang">Find me on GitHub. </a>
+          </p>
+          <p class="dark-text">Email me.</p>
           <form
             action="https://formspree.io/junyu_huang@hotmail.com"
             method="POST"
@@ -137,7 +141,7 @@
               class="contact-email-form"
               name="email"
               type="email"
-              placeholder="Your Email"
+              placeholder="Your Email Address"
               required=""
             />
             <textarea
@@ -149,20 +153,16 @@
               required=""
             ></textarea>
             <input
-              class="contact-email-form"
+              class="contact-email-form button"
               id="submit-button"
               type="submit"
-              value="Send"
+              value="Send Email"
             />
           </form>
         </div>
       </div>
       <footer>
         &copy; <span id="currentYear"></span> Jun Huang
-        <span class="contact-link">
-          <a href="https://github.com/JunYuHuang" title="GitHub"
-            ><i class="fab fa-github"></i
-          ></a>
         </span>
       </footer>
       <script src="./assets/js/main.js"></script>
