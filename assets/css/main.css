@@ -193,8 +193,9 @@ header nav .nav-links {
 }
 
 .skills-icons li {
-  display: inline;
+  display: inline-block;
   margin-right: 1em;
+  margin-bottom: 1em;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -330,7 +331,7 @@ footer {
   .project-item .projects-image-frame {
     object-fit: cover;
     width: 100%;
-    min-height: 30%;
+    height: 30%;
   }
 
   .project-item .project-item-overlay {
