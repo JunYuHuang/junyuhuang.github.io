@@ -15,7 +15,6 @@ a {
 
 .color-link {
   color: #007bff;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -73,7 +72,6 @@ p {
 .wrapper {
   margin: 0 auto;
   width: 66.6%;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   display: grid;
   grid-template-columns: 1fr;
@@ -111,10 +109,7 @@ header {
 header nav {
   margin: 0 auto;
   width: 66.6%;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -124,7 +119,6 @@ header nav #brand-logo {
   font-family: "Century Gothic", "Century";
   font-size: 1.3em;
   margin-left: 0;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   line-height: 2.6;
 }
@@ -153,14 +147,8 @@ header nav a:hover {
 header nav .nav-links {
   opacity: 0.9;
   line-height: 2.8;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
   flex: 1;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -266,14 +254,11 @@ form #email-textarea {
   border-color: transparent;
   height: 3em;
   font-family: "Arial", sans-serif;
-  -webkit-filter: brightness(1.5);
   filter: brightness(1.5);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 #submit-button:hover {
-  -webkit-filter: brightness(1);
   filter: brightness(1);
   cursor: pointer;
 }
@@ -329,4 +314,3 @@ footer {
     margin: 0 auto;
   }
 }
-/*# sourceMappingURL=main.css.map */
