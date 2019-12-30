@@ -165,21 +165,19 @@ header nav .nav-links {
 }
 
 .button {
-  /* margin: 1em; */
+  display: inline-block;
+  text-align: center;
   padding: 1em;
+  margin-top: 1em;
+  width: max-content;
   background-color: #1f460f;
   color: #f0f1f5;
   border-color: transparent;
-  height: 3em;
-  font-family: "Arial", sans-serif;
-  -webkit-filter: brightness(1.5);
   filter: brightness(1.5);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .button:hover {
-  -webkit-filter: brightness(1);
   filter: brightness(1);
   cursor: pointer;
 }
