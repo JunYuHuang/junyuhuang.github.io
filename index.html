@@ -32,13 +32,13 @@
     <div class="wrapper">
       <div class="section" id="home-header">
         <h1 class="section-header">Hi I'm Jun</h1>
-        <p class="dark-text half-width">
+        <p class=" half-width">
           A <abbr title="Computer Science and Information Technology">CSIT</abbr> undergraduate at <abbr title="Kwantlen Polytechnic University">KPU</abbr> preparing for software engineering and full-stack web development. 
         </p>
-        <p class="dark-text">
+        <p>
           I've worked with technologies such as:
         </p>
-        <ul class="dark-text tech-name">
+        <ul class="tech-name">
           <li>CSS3</li>
           <li>HTML5</li>
           <li>JavaScript</li>
@@ -58,12 +58,12 @@
             class="projects-image-frame"
           />
           <div class="project-item-description">
-            <h2 class="dark-text-header">Trivia Game</h2>
-            <p class="dark-text">
+            <h2>Trivia Game</h2>
+            <p>
               Simple vanilla JS web game that asks multiple choice, video
               game trivia questions that are pulled from an external API.
             </p>
-            <ul class="dark-text tech-name">
+            <ul class=" tech-name">
               <li>CSS3</li>
               <li>HTML5</li>
               <li>JavaScript</li>
@@ -81,12 +81,12 @@
             class="projects-image-frame"
           />
           <div class="project-item-description">
-            <h2 class="dark-text-header">The Secret Club</h2>
-            <p class="dark-text">
+            <h2>The Secret Club</h2>
+            <p>
               Fully responsive, one-page Bootstrap website for a fictional
               organization that features lazy-loaded images.
             </p>
-            <ul class="dark-text tech-name">
+            <ul class=" tech-name">
               <li>CSS3</li>
               <li>HTML5</li>
               <li>JavaScript</li>
@@ -101,36 +101,41 @@
         <p>
           <a class="color-link" href="https://github.com/JunYuHuang">Find me on GitHub. </a>
         </p>
-        <p class="dark-text">Email me.</p>
+        <p>Email me.</p>
         <form
           action="https://formspree.io/junyu_huang@hotmail.com"
           method="POST"
         >
+          <label for="form-name">Your Name</label>
           <input
+            id="form-name"
             class="contact-email-form"
             name="name"
             type="text"
             placeholder="Your Name"
             required=""
           />
+          <label for="form-name">Your Email Address</label>
           <input
+            id="form-email"
             class="contact-email-form"
             name="email"
             type="email"
             placeholder="Your Email Address"
             required=""
           />
+          <label for="form-textarea">Your Message</label>
           <textarea
+            id="form-textarea"
             class="contact-email-form"
-            id="email-textarea"
             name="message"
             placeholder="Your Message"
             rows="3"
             required=""
           ></textarea>
           <input
+            id="form-submit-button"
             class="contact-email-form button"
-            id="submit-button"
             type="submit"
             value="Send Email"
           />
