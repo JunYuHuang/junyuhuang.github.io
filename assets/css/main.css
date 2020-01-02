@@ -14,12 +14,12 @@ a {
 }
 
 .color-link {
-  color: #007bff;
+  color: #004280;
   transition: 0.3s;
 }
 
 .color-link:hover {
-  opacity: 0.5;
+  filter: brightness(0.2);
 }
 
 h1,
@@ -49,7 +49,8 @@ p {
   font-size: 1.2em;
   line-height: 1.5em;
   margin-top: 0;
-  color: rgba(15, 35, 7, 0.8);
+  color: rgba(15, 35, 7, 1);
+  filter: brightness(1.5);
 }
 
 .wrapper {
@@ -216,16 +217,17 @@ form {
 }
 
 form label {
-  color: rgba(15, 35, 7, 0.9);
+  color: rgba(15, 35, 7, 0.73);
   display: block;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   margin-bottom: 0.4rem;
+  /* display: none; */
 }
 
 form .contact-email-form {
   box-sizing: border-box;
   width: 100%;
-  border: 0.15rem solid rgba(15, 35, 7, 0.5);
+  border: 0.15rem solid rgba(15, 35, 7, 0.3);
   padding: 0.4em;
   background-color: transparent;
   font-family: "Arial", sans-serif;
@@ -254,7 +256,7 @@ form #form-textarea {
   transition: 0.3s;
 }
 
-#submit-button:hover {
+#form-submit-button:hover {
   filter: brightness(1);
   cursor: pointer;
 }
