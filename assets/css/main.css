@@ -20,6 +20,11 @@ a {
 
 .color-link:hover {
   filter: brightness(0.2);
+  text-decoration: underline;
+}
+
+.color-link:visited {
+  color: #004280;
 }
 
 h1,
@@ -189,10 +194,8 @@ header nav .nav-links {
 .project-item .project-item-description {
   padding-top: 1em;
   padding-right: 2em;
-  /* padding-right: 50%; */
   transition: 0.3s;
   width: calc(50% - 2em);
-  /* width: 50%; */
   margin: 0;
   opacity: 0.9;
   display: flex;
@@ -212,7 +215,6 @@ header nav .nav-links {
 form {
   width: 50%;
   transition: 0.3s;
-  /* padding-top: 1rem; */
   margin-bottom: 5rem;
 }
 
@@ -221,7 +223,6 @@ form label {
   display: block;
   font-size: 0.9rem;
   margin-bottom: 0.4rem;
-  /* display: none; */
 }
 
 form .contact-email-form {
