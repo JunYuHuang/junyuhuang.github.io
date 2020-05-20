@@ -266,16 +266,6 @@ p {
   min-height: calc(100vh);
 }
 
-.section__img-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.section__img-wrapper > img {
-  max-width: 100%;
-}
-
 .input-group {
   position: relative;
 }
@@ -713,6 +703,13 @@ p {
 .img-container > img {
   width: 100%;
   object-fit: cover;
+  transition: 0.3s ease-in-out;
+  scale: 105%;
+}
+
+.img-container > img:hover {
+  scale: 115%;
+  filter: brightness(0.75);
 }
 
 .section--projects__item {
