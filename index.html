@@ -1,129 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="author" content="Jun Huang" />
-  <meta name="description" content="Jun Huang's portfolio" />
-  <meta name="keywords"
-    content="web,developer,front-end,full-stack,application,html,css,sql,php,java,c#,bootstrap,server" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon" />
-  <link href="./assets/css/fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet" />
-  <title>Jun Huang</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <a href="#home-header" id="brand-logo">Jun <span id="brand-logo-mobile">Huang</span></a>
-      <span class="nav-links">
-        <a href="#projects-header">Projects</a>
-        <a href="#contact-header">Contact</a>
-      </span>
-    </nav>
-  </header>
-  <div class="wrapper">
-    <div class="section" id="home-header">
-      <h1 class="section-header">Hi I'm Jun</h1>
-      <p class="half-width">
-        A <abbr title="Computer Science and Information Technology">CSIT</abbr> undergraduate at <abbr
-          title="Kwantlen Polytechnic University">KPU</abbr> preparing for software engineering and full-stack web
-        development.
-      </p>
-      <p>
-        I put my projects on <a class="color-link" href="https://github.com/JunYuHuang">GitHub</a>.
-      </p>
-      <p>
-        I've worked with technologies such as:
-      </p>
-      <ul class="tech-name">
-        <li>CSS3</li>
-        <li>HTML5</li>
-        <li>JavaScript</li>
-        <li>Java</li>
-        <li>MySQL</li>
-        <li>JQuery</li>
-        <li>Git</li>
-      </ul>
-      <a class="button" href="#projects-header">See My Work</a>
-    </div>
-    <div class="section" id="projects-header">
-      <h1 class="section-header">Projects</h1>
-      <div class="project-item">
-        <img src="./assets/images/trivia-game.png" alt="A thumbnail of the Trivia Game web app."
-          class="projects-image-frame" />
-        <div class="project-item-description">
-          <h2>Trivia Game</h2>
-          <p>
-            Simple vanilla JS web game that asks multiple choice, video
-            game trivia questions that are pulled from an external API.
-          </p>
-          <ul class="tech-name">
-            <li>CSS3</li>
-            <li>HTML5</li>
-            <li>JavaScript</li>
-          </ul>
-          <p class="color-link">
-            <a href="https://junyuhuang.github.io/trivia-game/"><i class="fas fa-link">&nbsp;&nbsp;</i>View Live</a>
-          </p>
-          <p class="color-link">
-            <a href="https://github.com/junyuhuang/trivia-game/"><i class="fab fa-github">&nbsp;&nbsp;</i>View Code</a>
-          </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jun Huang" />
+    <meta name="description" content="Jun Huang's Portfolio" />
+    <meta
+      name="keywords"
+      content="jun,yu,huang,web,developer,front-end,full-stack,application,html,css,javascript,mysql,php,java,bootstrap,server,backend,software,engineer"
+    />
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>Jun Huang</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <nav class="navbar" role="navigation">
+        <div class="logo">
+          <a href="./" class="logo__link">
+            <img src="./assets/icons/favicon.png" alt="" class="logo-icon" />
+            <h1 class="logo uppercase">Jun Huang</h1>
+          </a>
         </div>
-      </div>
-    </div>
-    <div class="section">
-      <div class="project-item">
-        <img src="./assets/images/secret-club.png" alt="A thumbnail of The Secret Club website."
-          class="projects-image-frame" />
-        <div class="project-item-description">
-          <h2>The Secret Club</h2>
-          <p>
-            Fully responsive, one-page Bootstrap website for a fictional
-            organization that features lazy-loaded images.
-          </p>
-          <ul class=" tech-name">
-            <li>CSS3</li>
-            <li>HTML5</li>
-            <li>JavaScript</li>
-          </ul>
-          <p class="color-link">
-            <a href="https://junyuhuang.github.io/secret-club-website/"><i class="fas fa-link">&nbsp;&nbsp;</i>View
-              Live</a>
-          </p>
-          <p class="color-link">
-            <a href="https://github.com/junyuhuang/secret-club-website/"><i class="fab fa-github">&nbsp;&nbsp;</i>View
-              Code</a>
-          </p>
+        <ul class="nav-menu">
+          <li class="nav-menu__item">
+            <a href="#about-section" class="nav-menu__item__link">About</a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="#projects-section" class="nav-menu__item__link"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-menu__item">
+            <a href="#contact-section" class="nav-menu__item__link">Contact</a>
+          </li>
+        </ul>
+        <div class="navbar__nav-menu-button-wrapper hidden-in-desktop">
+          <button
+            class="button nav-menu-button"
+            role="button"
+            aria-label="Navigation Menu"
+          >
+            <img
+              src="./assets/icons/icon-hamburger.svg"
+              alt="A icon of a hamburger navigation menu."
+              class="nav-menu-button-icon nav-menu-button-icon--hamburger nav-menu-button-icon--hamburger--active"
+            />
+            <img
+              src="./assets/icons/icon-close.svg"
+              alt="A icon of an x that represents closing the navigation menu."
+              class="nav-menu-button-icon nav-menu-button-icon--close"
+            />
+          </button>
         </div>
-      </div>
-    </div>
-    <div class="section-contact" id="contact-header">
-      <h1 class="section-header">Contact Me</h1>
-      <p>Send me an email.</p>
-      <form action="https://formspree.io/junyu_huang@hotmail.com" method="POST">
-        <label for="form-name">Your Name</label>
-        <input id="form-name" class="contact-email-form" name="name" type="text" required="" />
-        <label for="form-email">Your Email</label>
-        <input id="form-email" class="contact-email-form" name="email" type="email" required="" />
-        <label for="form-textarea">Your Message</label>
-        <textarea id="form-textarea" class="contact-email-form" name="message" rows="3" required=""></textarea>
-        <input id="form-submit-button" class="contact-email-form button" type="submit" value="Send Email" />
-      </form>
-    </div>
-    <footer>
-      <div>
-        <span>&copy; <span id="currentYear"></span>&nbsp;Jun Huang</span>
-      </div>
-      <div class="color-link">
-        <a href="https://github.com/JunYuHuang"><i class="fab fa-github">&nbsp;</i>GitHub</a>
-      </div>
-      </span>
+      </nav>
+    </header>
+    <main class="main-wrapper">
+      <section class="section section--about reading-text" id="about-section">
+        <h1 class="h1 heading heading--main">Jun Huang</h1>
+        <article class="section__text section__text--about">
+          <p>
+            Software developer dedicated to building web solutions that work. I
+            make and put my projects on
+            <a class="url-link" href="https://github.com/JunYuHuang">GitHub.</a>
+          </p>
+
+          <p>I've worked with technologies such as:</p>
+          <ul class="tech-item-container">
+            <li class="tech-item">CSS</li>
+            <li class="tech-item">Git</li>
+            <li class="tech-item">HTML</li>
+            <li class="tech-item">JavaScript</li>
+            <li class="tech-item">Java</li>
+            <li class="tech-item">Jquery</li>
+            <li class="tech-item">MySQL</li>
+            <li class="tech-item">PHP</li>
+          </ul>
+          <div class="button-container button-container--about">
+            <a
+              href="#projects-section"
+              class="button button--green text-align-center font-weight--bold"
+              >View Work</a
+            >
+          </div>
+        </article>
+      </section>
+      <section class="section section--projects" id="projects-section">
+        <h1 class="h1 heading heading--main">Projects</h1>
+        <div class="projects-container">
+          <article class="section--projects__item">
+            <div class="img-container">
+              <img
+                src="./assets/images/penzaar--mockup.jpg"
+                alt="A splash preview image of the project Penzaar."
+              />
+            </div>
+            <div class="reading-text">
+              <h2 class="h2 heading">Penzaar</h2>
+              <p class="url-link-container">
+                <a
+                  href="https://github.com/JunYuHuang/INFO4125-Project"
+                  class="url-link"
+                  >View Code</a
+                >
+              </p>
+              <p>
+                An ecommerce storefront that features a session-based shopping
+                cart with CRUD functionality.
+              </p>
+              <ul class="tech-item-container">
+                <li class="tech-item">CSS</li>
+                <li class="tech-item">HTML</li>
+                <li class="tech-item">JavaScript</li>
+                <li class="tech-item">MySQL</li>
+                <li class="tech-item">PHP</li>
+              </ul>
+            </div>
+          </article>
+          <article class="section--projects__item">
+            <div class="img-container">
+              <img
+                src="./assets/images/bookmark-landing-page--mockup.jpg"
+                alt="A splash preview image of the project Bookmark."
+              />
+            </div>
+            <div class="reading-text">
+              <h2 class="h2 heading">Bookmark</h2>
+              <p class="url-link-container">
+                <a
+                  href="https://github.com/JunYuHuang/frontend-mentor-challenges/tree/master/bookmark-landing-page-master"
+                  class="url-link"
+                  >View Code</a
+                >
+                <a
+                  href="https://junyuhuang.github.io/frontend-mentor-challenges/bookmark-landing-page-master/"
+                  class="url-link"
+                  >View Live</a
+                >
+              </p>
+              <p>
+                A responsive landing page for a fake web browser extension based
+                on UI mockups.
+              </p>
+              <ul class="tech-item-container">
+                <li class="tech-item">CSS</li>
+                <li class="tech-item">HTML</li>
+                <li class="tech-item">JavaScript</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="section section--contact reading-text"
+        id="contact-section"
+      >
+        <h1 class="h1 heading heading--main">Contact Me</h1>
+        <form
+          action="https://formspree.io/junyu_huang@hotmail.com"
+          method="POST"
+          class="section__text section__text--contact"
+        >
+          <p class="paragraph--contact">Email me.</p>
+          <div
+            class="input-group input-group--text input-group--validation half-width"
+          >
+            <input
+              class="input input--text input--text--validation"
+              id="guestName"
+              name="guestName"
+              type="text"
+              required
+              placeholder=" "
+              minlength="1"
+              maxlength="255"
+              pattern=".+"
+            />
+            <label class="label label--validation ellipsis" for="guestName">
+              Your Name
+            </label>
+            <div class="img-wrapper--icon--validation">
+              <img
+                src="./assets/icons/checkmark-circle.svg"
+                alt="An icon of a checkmark"
+              />
+            </div>
+          </div>
+          <div
+            class="input-group input-group--text input-group--validation full-width"
+          >
+            <input
+              class="input input--text input--text--validation input--text--email"
+              id="guestEmailAddress"
+              name="guestEmailAddress"
+              type="email"
+              required
+              placeholder=" "
+              minlength="4"
+              maxlength="1000"
+              pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+              autocomplete="email"
+            />
+            <label
+              class="label label--validation ellipsis"
+              for="guestEmailAddress"
+            >
+              Your Email Address
+            </label>
+            <div class="img-wrapper--icon--validation">
+              <img
+                src="./assets/icons/checkmark-circle.svg"
+                alt="An icon of a checkmark"
+              />
+            </div>
+            <div class="input-requirements">Invalid email.</div>
+          </div>
+          <div
+            class="input-group input-group--text input-group--validation half-width"
+          >
+            <textarea
+              class="input input--text input--text--validation input--textarea"
+              id="guestMessage"
+              name="guestMessage"
+              type="text"
+              required
+              placeholder=" "
+              minlength="1"
+              maxlength="999"
+              pattern=".+"
+              rows="4"
+              value=""
+            ></textarea>
+            <label class="label label--validation ellipsis" for="guestMessage">
+              Your Message
+            </label>
+            <div class="img-wrapper--icon--validation">
+              <img
+                src="./assets/icons/checkmark-circle.svg"
+                alt="An icon of a checkmark"
+              />
+            </div>
+          </div>
+          <button class="button button--green font-weight--bold full-width">
+            Send Email
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="navbar navbar--footer" role="navigation">
+        <div class="logo-container logo-container--footer">
+          <a href="./" class="logo__link">
+            <h1 class="logo logo--footer uppercase">
+              &copy;&nbsp;<span class="footer__text--currentYear"></span
+              >&nbsp;Jun Huang
+            </h1>
+          </a>
+          <a
+            href="https://github.com/JunYuHuang"
+            class="social-links__item__link"
+          >
+            <div class="icon-wrapper">
+              <img
+                src="./assets/icons/logo-github--light-coloured.svg"
+                alt="The logo of GitHub."
+              />
+            </div>
+            <div class="logo logo--footer font-weight--normal hidden-in-mobile">
+              &nbsp;GitHub
+            </div>
+          </a>
+        </div>
+      </nav>
     </footer>
-    <script src="./assets/js/main.js"></script>
-  </div>
-</body>
-
+    <script src="./assets/app.js"></script>
+  </body>
 </html>
