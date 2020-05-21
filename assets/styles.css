@@ -704,11 +704,11 @@ p {
   width: 100%;
   object-fit: cover;
   transition: 0.3s ease-in-out;
-  scale: 105%;
+  transform: scale(1.05);
 }
 
 .img-container > img:hover {
-  scale: 115%;
+  transform: scale(1.15);
   filter: brightness(0.75);
 }
 
