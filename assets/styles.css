@@ -196,6 +196,7 @@ p {
   color: hsl(199, 71%, 15%);
   color: var(--color-prussian-blue);
   transition: 0.3s ease-in-out;
+  text-decoration: underline;
 }
 
 .url-link:hover {
@@ -731,7 +732,7 @@ p {
 
 .section--contact {
   min-height: calc(100vh - 88px);
-  padding-bottom: 2rem;
+  padding-bottom: 88px;
 }
 
 /* footer */
@@ -833,6 +834,10 @@ p {
   }
 
   /* common elements */
+  .url-link {
+    text-decoration: none;
+  }
+
   .main-wrapper,
   .header {
     max-width: 1000px;
